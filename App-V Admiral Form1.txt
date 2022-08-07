@@ -1,0 +1,51 @@
+﻿namespace App_V_Admiral
+{
+    using System;
+    using System.Threading;
+    using System.Windows.Forms;
+
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void RemovePackageClickHandler(object sender, EventArgs e)
+        {
+            if (this.packageListView.SelectedItems.Count > 0)
+            {
+                for (int i = 0; i < this.packageListView.SelectedItems.Count; i++)
+                {
+                    AppVPackage selectedPackage = this.packageListView.SelectedItems[i].Tag as AppVPackage;
+                    if (selectedPackage != null)
+                    {
+                        selectedPackage.Remove();
+                    }
+                }
+
+                ThreadStart packageThreadStart = new ThreadStart(this.loadPackagesDelegate);
+                new Thread(packageThreadStart).Start();
+            }
+        }
+
+        private void MountPackageClickHandler(object sender, EventArgs e)
+        {
+            if (this.packageListView.SelectedItems.Count > 0)
+            {
+                for (int i = 0; i < this.packageListView.SelectedItems.Count; i++)
+                {
+                    AppVPackage selectedPackage = this.packageListView.SelectedItems[i].Tag as AppVPackage;
+                    if (selectedPackage != null)
+                    {
+                        selectedPackage.Mount();
+                    }
+                }
+
+                ThreadStart packageThreadStart = new ThreadStart(this.loadPackagesDelegate);
+                new Thread(packageThreadStart).Start();
+            }
+        }
+
+    }
+}
