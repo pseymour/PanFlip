@@ -128,24 +128,24 @@
         AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
         LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
         ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAAAE
-        DwAAAk1TRnQBSQFMAgEBAwEAAZABAAGQAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
+        DwAAAk1TRnQBSQFMAgEBAwEAAaABAAGgAQABEAEAARABAAT/ASEBAAj/AUIBTQE2BwABNgMAASgDAAFA
         AwABEAMAAQEBAAEgBgABEB4ABAIDBAEFAwkBDAMPARQDEwEaAxUBHAMTARoDDwEUAwkBDAMEAQUEAhgA
         BAEDAgEDAwYBCAMJAQwDCQEMAwcBCQMEAQUEARwABAIDBAEFAwkBDAMPARQDEwEaAxUBHAMTARoDDwEU
         AwkBDAMEAQUEAlAABAIDBgEIAxMBGgMmATgDNgFZAz8BbAFAAUEBQAFxAz8BbAM2AVkDJgE4AxMBGgMG
         AQgEAhAABAEDCgENAxsBJgMqAT8DMAFLAzEBTQMtAUQDIQEvAxABFQMDAQQUAAQCAwYBCAMTARoDJgE4
         AzYBWQM/AWwBQAJBAXEDPwFsAzYBWQMmATgDEwEaAwYBCAQCSAAEAQMGAQgDGAEhAzUBVgNMAY4BUwFV
-        AVMBqgFfAWYBXwHlAREBgAEmAf4BXwFmAV8B5QFTAVUBUwGqA0wBjgM1AVYDGAEhAwYBCAQBCAAEAgMQ
-        ARUDLQFGAkEBQgFyAlEBUgGkAl0BZwHqAkcBgAH3AlkBXAHBA0QBewM2AVcDGQEjAwQBBQwABAEDBgEI
-        AxgBIQM1AVYDTAGOAVMCVQGqAV8CZgHlAQ8BdgGJAf4BXwJmAeUBUwJVAaoDTAGOAzUBVgMYASEDBgEI
-        BAFEAAMEAQUDEwEaAzUBVgFQAVEBUAGcAUUBbgFKAfUBAAGfAScB/wECAa0BMQH/AQIBsgEzAf8BAQGq
-        AS8B/wEAAZsBIgH/AUYBbgFKAfUBUAJRAZwDNQFWAxMBGgMEAQUIAAMLAQ4DLwFJAkYBRwGBAgUBpwH/
+        AVMBqgFfAWYBXwHlARMBgAEoAf4BXwFmAV8B5QFTAVUBUwGqA0wBjgM1AVYDGAEhAwYBCAQBCAAEAgMQ
+        ARUDLQFGAkEBQgFyAlEBUgGkAl0BZwHqAk0BfQH3AlkBXAHBA0QBewM2AVcDGQEjAwQBBQwABAEDBgEI
+        AxgBIQM1AVYDTAGOAVMCVQGqAV8CZgHlAREBeAGFAf4BXwJmAeUBUwJVAaoDTAGOAzUBVgMYASEDBgEI
+        BAFEAAMEAQUDEwEaAzUBVgFQAVEBUAGcAUcBbgFMAfUBAAGfAScB/wECAa0BMQH/AQIBsgEzAf8BAQGq
+        AS8B/wEAAZsBIgH/AUgBbgFMAfUBUAJRAZwDNQFWAxMBGgMEAQUIAAMLAQ4DLwFJAkYBRwGBAgUBpwH/
         AgkBvAH/AgwBwgH/ARABDgHDAf8BDwEOAbwB/wIOAa4B/wJYAVoBugM6AWADFgEeBAIIAAMEAQUDEwEa
-        AzUBVgFQAlEBnAFFAW4BeQH1AQABhwHNAf8BAAGPAdMB/wEAAZIB0gH/AQABiQHLAf8BAAF4AbwB/wFF
-        AW4BcQH1AVACUQGcAzUBVgMTARoDBAEFQAAEAgMJAQwDJQE2A0wBjgFGAW4BSwH1AQsBrgE/Af8BFQHD
-        AVIB/wEWAc4BWQH/ARABzwFRAf8BBQHOAUgB/wEDAb0BPAH/AQABogEoAf8BRgFuAUkB9QNMAY4DJQE2
+        AzUBVgFQAlEBnAFHAW4BcwH1AQABhwHNAf8BAAGPAdMB/wEAAZIB0gH/AQABiQHLAf8BAAF4AbwB/wFH
+        AW4BbwH1AVACUQGcAzUBVgMTARoDBAEFQAAEAgMJAQwDJQE2A0wBjgFIAW4BTQH1AQsBrgE/Af8BFQHD
+        AVIB/wEWAc4BWQH/ARABzwFRAf8BBQHOAUgB/wEDAb0BPAH/AQABogEoAf8BSAFuAUsB9QNMAY4DJQE2
         AwkBDAQAAwMBBAMgAS4DRAF5AgsBsQH/ARUBFAHJAf8CHQHVAf8CHAHZAf8CFgHZAf8CEQHWAf8CEAHH
-        Af8CDwGyAf8CUgFUAagDLwFJAwkBDAQABAIDCQEMAyUBNgNMAY4BRQFuAXkB9QEDAZ8B2AH/AQoBsAHj
-        Af8BCwGyAegB/wEDAa4B5gH/AQABpQHkAf8BAAGXAdoB/wEAAYQBwgH/AUUBbgFxAfUDTAGOAyUBNgMJ
+        Af8CDwGyAf8CUgFUAagDLwFJAwkBDAQABAIDCQEMAyUBNgNMAY4BRwFuAXMB9QEDAZ8B2AH/AQoBsAHj
+        Af8BCwGyAegB/wEDAa4B5gH/AQABpQHkAf8BAAGXAdoB/wEAAYQBwgH/AUcBbgFvAfUDTAGOAyUBNgMJ
         AQxAAAQCAw8BFAM2AVkBUwFVAVMBqgERAawBQwH/ASoBzQFoAf8BOQHbAXkB/wE4AdwBfAH/AS0B2wFw
         Af8BGQHYAWMB/wEHAdIBTAH/AQMBuQE4Af8BAAGRAR8B/wFTAVUBUwGqAzYBWQMPARQEAAMJAQsDMwFQ
         Al4BZQHdAR8BHQHMAf8CNQHdAf8BPwE+AeQB/wI7AeMB/wItAeIB/wIcAd8B/wIRAdkB/wEQAQ4BwQH/
@@ -156,12 +156,12 @@
         ATIBxQH/ATcBOAHbAf8BVwFYAekB/wFgAV8B6wH/AVUBVAHqAf8CQwHnAf8CLQHiAf8BFwEWAd4B/wIQ
         Ac0B/wIKAasB/wNFAXwDHAEnBAEDAwEEAxMBGgM/AWwBXwJmAeUBNwHJAeUB/wE1AdcB8QH/AT4B2QHy
         Af8BOQHXAfIB/wEsAc8B7wH/ARkBxAHuAf8BCAG4AeoB/wEAAaYB4QH/AQABhgHHAf8BXwJmAeUDPwFs
-        AxMBGkAAAwMBBAMVARwBQAFBAUABcQFOAY4BeAH+AXcB2gGmAf8BbgHnAagB/wGAAe4BswH/AXYB7QGv
-        Af8BXAHnAZ4B/wE/AeEBhwH/AR8B2AFoAf8BBQHKAUUB/wEBAaEBKAH/ARABewEiAf4BQAFBAUABcQMV
+        AxMBGkAAAwMBBAMVARwBQAFBAUABcQFQAYoBegH+AXcB2gGmAf8BbgHnAagB/wGAAe4BswH/AXYB7QGv
+        Af8BXAHnAZ4B/wE/AeEBhwH/AR8B2AFoAf8BBQHKAUUB/wEBAaEBKAH/ARIBfQEkAf4BQAFBAUABcQMV
         ARwEAAMPARQDPgFqAV4BXQHSAf8BhwGGAegB/wF3AXUB7wH/AYIBgQHxAf8BcQFvAe8B/wFVAVQB6gH/
-        AjoB5QH/Ah8B3gH/Ag4B0AH/AgkBrwH/AkYBRwGAAx4BKwQBAwMBBAMVARwBQAJBAXEBJgGmAbYB/gGB
+        AjoB5QH/Ah8B3gH/Ag4B0AH/AgkBrwH/AkYBRwGAAx4BKwQBAwMBBAMVARwBQAJBAXEBKAGiAbIB/gGB
         AeoB8wH/AXgB6AH3Af8BWwHnAfYB/wFSAeIB9QH/ATsB2gHyAf8BJQHRAe8B/wENAb8B6wH/AQABrAHn
-        Af8BAAGOAc0B/wEPAXMBgQH+AUACQQFxAxUBHEAAAwMBBAMTARoDPwFsAV8CZgHlAYEB2gGpAf8BswHw
+        Af8BAAGOAc0B/wERAXUBgAH+AUACQQFxAxUBHEAAAwMBBAMTARoDPwFsAV8CZgHlAYEB2gGpAf8BswHw
         AdEB/wG/AfQB2AH/AYsB8AG7Af8BZwHqAaUB/wFHAeEBiwH/ASQB1wFqAf8BBwHFAUUB/wEAAZwBJwH/
         AV8BZgFfAeUDPwFsAxMBGgQAAw4BEgM7AWQCZQHUAf8BnQGcAeoB/wHDAcAB9gH/Aa4BqwH1Af8BggGB
         AfIB/wFgAV8B7AH/Aj8B5gH/ASABHwHdAf8CDAHOAf8CCAGrAf8DRQF8AxwBJwQBAwMBBAMTARoDPwFs
@@ -171,19 +171,19 @@
         Af8BUwFVAVMBqgM2AVkDDwEUBAADCQELAzMBUAJeAWUB3QGUAZMB5QH/AbsBugHyAf8BxwHCAfYB/wG1
         AbMB9QH/AZEBjQHwAf8BQgFBAeYB/wEaARkB2gH/AQgBBwHHAf8CBQGeAf8DPwFtAxMBGgQBBAIDDwEU
         AzYBWQFTAlUBqgFtAecB7gH/AboB+AH6Af8BvQH6AfwB/wGoAfkB/AH/AYkB8wH5Af8BYwHjAfUB/wE/
-        AdIB8AH/ASEBtwHmAf8BCgGQAcgB/wFTAlUBqgM2AVkDDwEUQAAEAgMJAQwDJQE2A0wBjgFaAXkBbgH1
-        AYQB2gGsAf8BoAHqAccB/wGfAewBxQH/AYsB6QG5Af8BZgHhAaAB/wE+AdQBfAH/ARQBtwFNAf8BRgFu
-        AUwB9QNMAY4DJQE2AwkBDAQAAwMBBAMgAS4DRAF5AnMB2QH/AZ0BnAHpAf8BqwGqAfEB/wGnAaYB8QH/
+        AdIB8AH/ASEBtwHmAf8BCgGQAcgB/wFTAlUBqgM2AVkDDwEUQAAEAgMJAQwDJQE2A0wBjgFaAXMBbgH1
+        AYQB2gGsAf8BoAHqAccB/wGfAewBxQH/AYsB6QG5Af8BZgHhAaAB/wE+AdQBfAH/ARQBtwFNAf8BSAFu
+        AU8B9QNMAY4DJQE2AwkBDAQAAwMBBAMgAS4DRAF5AnMB2QH/AZ0BnAHpAf8BqwGqAfEB/wGnAaYB8QH/
         AY8BjgHvAf8BagFpAeYB/wFEAUMB2gH/AicBvwH/AlIBVAGoAy8BSQMJAQwEAAQCAwkBDAMlATYDTAGO
-        AUoBfwGBAfUBmAHxAfQB/wG6AfgB+wH/AbIB+QH8Af8BnAH0AfoB/wGAAe8B+AH/AV0B4wHzAf8BNgHL
-        AecB/wFGAW8BeQH1A0wBjgMlATYDCQEMRAADBAEFAxMBGgM1AVYDUQGcAVoBdgFuAfUBaQHQAZgB/wFw
-        AdkBoAH/AWEB2AGWAf8BRQHNAYEB/wEiAbkBVwH/AUcBbgFVAfUBUAJRAZwDNQFWAxMBGgMEAQUIAAML
+        AUwBeQF8AfUBmAHxAfQB/wG6AfgB+wH/AbIB+QH8Af8BnAH0AfoB/wGAAe8B+AH/AV0B4wHzAf8BNgHL
+        AecB/wFIAW4BcwH1A0wBjgMlATYDCQEMRAADBAEFAxMBGgM1AVYDUQGcAVoBcQFuAfUBaQHQAZgB/wFw
+        AdkBoAH/AWEB2AGWAf8BRQHNAYEB/wEiAbkBVwH/AUkBbgFXAfUBUAJRAZwDNQFWAxMBGgMEAQUIAAML
         AQ4DLwFJA0cBgQJsAdYB/wF8AXoB4QH/AnoB5AH/AmoB4QH/Ak8B2AH/ATABLwHFAf8CWAFaAboDOgFg
-        AxYBHgQCCAADBAEFAxMBGgM1AVYBUAJRAZwBSgF/AYEB9QFPAeUB7AH/AZYB8QH1Af8BjwHvAfUB/wF0
-        AecB8gH/AU8B1gHmAf8BRQFzAXwB9QFQAlEBnAM1AVYDEwEaAwQBBUQABAEDBgEIAxgBIQM1AVYDTAGO
-        AVMCVQGqAV8CZgHlAT8BjAFxAf4BXwFmAV8B5QFTAlUBqgNMAY4DNQFWAxgBIQMGAQgEAQgABAIDEAEV
-        Ay0BRgJBAUIBcgNSAaQCXQFnAeoCUQGIAfcCWQFcAcEDRAF7AzYBVwMZASMDBAEFDAAEAQMGAQgDGAEh
-        AzUBVgNMAY4BUwJVAaoBXwJmAeUBHAGqAbYB/gFfAmYB5QFTAlUBqgNMAY4DNQFWAxgBIQMGAQgEAUgA
+        AxYBHgQCCAADBAEFAxMBGgM1AVYBUAJRAZwBTAF5AXwB9QFPAeUB7AH/AZYB8QH1Af8BjwHvAfUB/wF0
+        AecB8gH/AU8B1gHmAf8BRwFwAXYB9QFQAlEBnAM1AVYDEwEaAwQBBUQABAEDBgEIAxgBIQM1AVYDTAGO
+        AVMCVQGqAV8CZgHlAUEBiAFzAf4BXwFmAV8B5QFTAlUBqgNMAY4DNQFWAxgBIQMGAQgEAQgABAIDEAEV
+        Ay0BRgJBAUIBcgNSAaQCXQFnAeoCUQGGAfcCWQFcAcEDRAF7AzYBVwMZASMDBAEFDAAEAQMGAQgDGAEh
+        AzUBVgNMAY4BUwJVAaoBXwJmAeUBHgGmAbIB/gFfAmYB5QFTAlUBqgNMAY4DNQFWAxgBIQMGAQgEAUgA
         BAIDBgEIAxMBGgMmATgDNgFZAz8BbAFAAkEBcQM/AWwDNgFZAyYBOAMTARoDBgEIBAIQAAQBAwoBDQMb
         ASYDKgE/AzABSwMxAU0DLQFEAyEBLwMQARUDAwEEFAAEAgMGAQgDEwEaAyYBOAM2AVkDPwFsAUACQQFx
         Az8BbAM2AVkDJgE4AxMBGgMGAQgEAlAABAIDBAEFAwkBDAMPARQDEwEaAxUBHAMTARoDDwEUAwkBDAME
@@ -225,7 +225,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;toggleButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="serviceCheckBox.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;serviceCheckBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="registryCheckBox.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -298,7 +298,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;registryCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="appCheckBox.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
@@ -334,6 +334,105 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;appCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="serviceButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="serviceButton.ImageKey" xml:space="preserve">
+    <value>yellow-dot</value>
+  </data>
+  <data name="serviceButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 119</value>
+  </data>
+  <data name="serviceButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 50</value>
+  </data>
+  <data name="serviceButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="serviceButton.Text" xml:space="preserve">
+    <value>Service</value>
+  </data>
+  <data name="serviceButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;serviceButton.Name" xml:space="preserve">
+    <value>serviceButton</value>
+  </data>
+  <data name="&gt;&gt;serviceButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serviceButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;serviceButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="registryButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="registryButton.ImageKey" xml:space="preserve">
+    <value>yellow-dot</value>
+  </data>
+  <data name="registryButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 119</value>
+  </data>
+  <data name="registryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 50</value>
+  </data>
+  <data name="registryButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="registryButton.Text" xml:space="preserve">
+    <value>Registry</value>
+  </data>
+  <data name="registryButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;registryButton.Name" xml:space="preserve">
+    <value>registryButton</value>
+  </data>
+  <data name="&gt;&gt;registryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;registryButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;registryButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="appButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="appButton.ImageKey" xml:space="preserve">
+    <value>yellow-dot</value>
+  </data>
+  <data name="appButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 119</value>
+  </data>
+  <data name="appButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 50</value>
+  </data>
+  <data name="appButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="appButton.Text" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="appButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;appButton.Name" xml:space="preserve">
+    <value>appButton</value>
+  </data>
+  <data name="&gt;&gt;appButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;appButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;appButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -343,7 +442,7 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>353, 125</value>
+    <value>351, 183</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
