@@ -2,13 +2,9 @@
 namespace PanFlip
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
     using System.Management;
     using System.Security.Principal;
     using System.ServiceProcess;
-    using System.Text;
-    using System.Threading.Tasks;
 
     public static class VPNClientStatus
     {
@@ -30,7 +26,7 @@ namespace PanFlip
             }
         }
 
-        private static bool EnabledInRegistry
+        public static bool EnabledInRegistry
         {
             get
             {
@@ -54,7 +50,7 @@ namespace PanFlip
                     }
                     else
                     {
-                        Console.WriteLine("Unable to open {0} key.", System.IO.Path.GetFileName(path));
+                        //Console.WriteLine("Unable to open {0} key.", System.IO.Path.GetFileName(path));
                     }
                 }
 
@@ -81,7 +77,7 @@ namespace PanFlip
                     }
                     else
                     {
-                        Console.WriteLine("Unable to open {0} key.", System.IO.Path.GetFileName(path));
+                        //Console.WriteLine("Unable to open {0} key.", System.IO.Path.GetFileName(path));
                     }
                 }
 
@@ -89,7 +85,7 @@ namespace PanFlip
             }
         }
 
-        private static bool ServiceEnabled
+        public static bool ServiceEnabled
         {
             get
             {
@@ -125,11 +121,6 @@ namespace PanFlip
                     }
                     controller.Close();
                 }
-                else
-                {
-                    Console.WriteLine("Service does not exist.");
-                }
-
             }
         }
 
@@ -152,7 +143,7 @@ namespace PanFlip
             return returnValue;
         }
 
-        private static bool StartupAppEnabled
+        public static bool StartupAppEnabled
         {
             get
             {
@@ -204,7 +195,7 @@ namespace PanFlip
                 }
                 else
                 {
-                    Console.WriteLine("Unable to open StartupApproved\\Run key.");
+                    //Console.WriteLine("Unable to open StartupApproved\\Run key.");
                 }
 
                 baseKey.Close();
@@ -222,6 +213,7 @@ namespace PanFlip
             return serviceExists;
         }
 
+        /*
         /// <summary>
         /// Returns true if the current process is running with administrator privileges.
         /// </summary>
@@ -233,6 +225,6 @@ namespace PanFlip
                 return new WindowsPrincipal(WindowsIdentity.GetCurrent()).IsInRole(WindowsBuiltInRole.Administrator);
             }
         }
-
+        */
     }
 }
