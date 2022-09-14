@@ -13,26 +13,27 @@
       <ComponentRef Id="SharedLibrary" />
     </Feature>
     
-    <Icon Id="SecurityLock.ico" SourceFile="..\SecurityLock.ico"/>
-    <Property Id="ARPPRODUCTICON" Value="SecurityLock.ico" />
+    <Icon Id="pan.ico" SourceFile="..\pan.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="pan.ico" />
     <Property Id="ARPNOMODIFY" Value="yes" Secure="yes" />
-    
-    <Directory Id="TARGETDIR" Name="SourceDir">
+	<Property Id="DISABLEADVTSHORTCUTS" Value="1" />
+
+	<Directory Id="TARGETDIR" Name="SourceDir">
 
       <!-- Create the structure in the appropriate Program Files folder. -->
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLFOLDER" Name="PanFlip">
-          <Component Id="ElevationUserInterface" Guid="0533ABF0-5AFB-4514-AC7A-754D61F5E72C">
+          <Component Win64="no" Id="ElevationUserInterface" Guid="0533ABF0-5AFB-4514-AC7A-754D61F5E72C">
             <File Id="ElevationUserInterfaceExe" Name="$(var.LocalUI.TargetFileName)" Source="$(var.LocalUI.TargetPath)" KeyPath="yes" />
-            <Shortcut Id="LocalUserInferfaceShortcut" Directory="ProgramMenuFolder" Name="PanFlip" Description="PanFlip Local User Interface" Advertise="yes" WorkingDirectory="INSTALLDIR" Icon="SecurityLock.ico" IconIndex="0" />
+            <Shortcut Id="LocalUserInferfaceShortcut" Directory="ProgramMenuFolder" Name="PanFlip" Description="PanFlip Local User Interface" Advertise="yes" WorkingDirectory="INSTALLDIR" Icon="pan.ico" IconIndex="0" />
           </Component>
-          <Component Id="SharedLibrary" Guid="2ECF14B8-8100-4774-B145-27B371122595">
+          <Component Win64="no" Id="SharedLibrary" Guid="2ECF14B8-8100-4774-B145-27B371122595">
             <File Id="SharedDll" Name="$(var.Shared.TargetFileName)" Source="$(var.Shared.TargetPath)" KeyPath="yes" />
           </Component>
-          <Component Id="ProcessCommunicationLibrary" Guid="04E782C4-21C0-440B-9F64-6628C99EAC71" >
+          <Component Win64="no" Id="ProcessCommunicationLibrary" Guid="04E782C4-21C0-440B-9F64-6628C99EAC71" >
             <File Id="ProcessCommunicationDll" Name="$(var.ProcessCommunication.TargetFileName)" Source="$(var.ProcessCommunication.TargetPath)" KeyPath="yes" />
           </Component>
-          <Component Id="Service" Guid="60BA5861-B317-4FBB-ACC4-BCCCCA11853B">
+          <Component Win64="no" Id="Service" Guid="60BA5861-B317-4FBB-ACC4-BCCCCA11853B">
             <File Id="ServiceExe" Name="$(var.Service.TargetFileName)" Source="$(var.Service.TargetPath)" KeyPath="yes" />
             <ServiceInstall DisplayName="[ProductName]" Name="PanFlip" Start="auto" Type="shareProcess" Vital="yes"
                             Description="!(loc.ServiceDescription)"

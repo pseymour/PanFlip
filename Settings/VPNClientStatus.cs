@@ -10,19 +10,40 @@ namespace PanFlip
     {
         private static readonly string ServiceName = "PanGPS";
 
-        public static bool Enabled
+        public static ComponentState State
         {
             get
             {
-                return (VPNClientStatus.EnabledInRegistry ||
-                        VPNClientStatus.ServiceEnabled ||
-                        VPNClientStatus.StartupAppEnabled);
+                bool anyEnabled = (VPNClientStatus.EnabledInRegistry || VPNClientStatus.ServiceEnabled || VPNClientStatus.StartupAppEnabled);
+                bool allEnabled = (VPNClientStatus.EnabledInRegistry && VPNClientStatus.ServiceEnabled && VPNClientStatus.StartupAppEnabled);
+                if (allEnabled)
+                {
+                    return ComponentState.Enabled;
+                }
+                else if (!anyEnabled)
+                {
+                    return ComponentState.Disabled;
+                }
+                else
+                {
+                    return ComponentState.PartiallyEnabled;
+                }
             }
             set
             {
-                ServiceEnabled = value;
-                StartupAppEnabled = value;
-                EnabledInRegistry = value;
+                switch (value)
+                {
+                    case ComponentState.Enabled:
+                        {
+                            ServiceEnabled = StartupAppEnabled = EnabledInRegistry = true;
+                            break;
+                        }
+                    case ComponentState.Disabled:
+                        {
+                            ServiceEnabled = StartupAppEnabled = EnabledInRegistry = false;
+                            break;
+                        }
+                }
             }
         }
 

@@ -49,7 +49,7 @@ namespace PanFlip
             };
             this.notifyIconTimer.Elapsed += NotifyIconTimerElapsed;
 
-            this.Icon = Properties.Resources.SecurityLock;
+            this.Icon = Properties.Resources.pan;
 
             this.SetFormText();
         }
@@ -91,34 +91,42 @@ namespace PanFlip
 
         private void ConfigureButton()
         {
-            if (VPNClientStatus.Enabled)
+            switch (VPNClientStatus.State)
             {
-                toggleButton.ImageKey = "green-dot";
-                this.toggleButton.Invoke(this.setButtonTextDelegate, this.toggleButton, "&GlobalProtect is enabled.");
-            }
-            else
-            {
-                toggleButton.ImageKey = "red-dot";
-                this.toggleButton.Invoke(this.setButtonTextDelegate, this.toggleButton, "&GlobalProtect is disabled.");
+                case ComponentState.Enabled:
+                    {
+                        toggleButton.ImageKey = "green-dot";
+                        this.toggleButton.Invoke(this.setButtonTextDelegate, this.toggleButton, "&GlobalProtect is enabled.");
+                        break;
+                    }
+                case ComponentState.Disabled:
+                    {
+                        toggleButton.ImageKey = "red-dot";
+                        this.toggleButton.Invoke(this.setButtonTextDelegate, this.toggleButton, "&GlobalProtect is disabled.");
+                        break;
+                    }
+                case ComponentState.PartiallyEnabled:
+                    {
+                        toggleButton.ImageKey = "yellow-dot";
+                        this.toggleButton.Invoke(this.setButtonTextDelegate, this.toggleButton, "&GlobalProtect is partially enabled.");
+                        break;
+                    }
             }
 
             switch (VPNClientStatus.ServiceEnabled)
             {
                 case true:
                     {
-                        serviceCheckBox.ImageKey = "green-dot";
                         serviceButton.ImageKey = "green-dot";
                         break;
                     }
                 case false:
                     {
-                        serviceCheckBox.ImageKey = "red-dot";
                         serviceButton.ImageKey = "red-dot";
                         break;
                     }
                 default:
                     {
-                        serviceCheckBox.ImageKey = "yellow-dot";
                         serviceButton.ImageKey = "yellow-dot";
                         break;
                     }
@@ -127,19 +135,16 @@ namespace PanFlip
             {
                 case true:
                     {
-                        registryCheckBox.ImageKey = "green-dot";
                         registryButton.ImageKey = "green-dot";
                         break;
                     }
                 case false:
                     {
-                        registryCheckBox.ImageKey = "red-dot";
                         registryButton.ImageKey = "red-dot";
                         break;
                     }
                 default:
                     {
-                        registryCheckBox.ImageKey = "yellow-dot";
                         registryButton.ImageKey = "yellow-dot";
                         break;
                     }
@@ -148,19 +153,16 @@ namespace PanFlip
             {
                 case true:
                     {
-                        appCheckBox.ImageKey = "green-dot";
                         appButton.ImageKey = "green-dot";
                         break;
                     }
                 case false:
                     {
-                        appCheckBox.ImageKey = "red-dot";
                         appButton.ImageKey = "red-dot";
                         break;
                     }
                 default:
                     {
-                        appCheckBox.ImageKey = "yellow-dot";
                         appButton.ImageKey = "yellow-dot";
                         break;
                     }
@@ -213,9 +215,51 @@ namespace PanFlip
             ChannelFactory<IContractInterface> namedPipeFactory = new ChannelFactory<IContractInterface>(binding, Settings.NamedPipeServiceBaseAddress);
             IContractInterface channel = namedPipeFactory.CreateChannel();
 
-            channel.SetClientState(!VPNClientStatus.Enabled);
+            if (VPNClientStatus.State == ComponentState.Disabled)
+            {
+                channel.SetClientState(ComponentState.Enabled);
+            }
+            else
+            {
+                channel.SetClientState(ComponentState.Disabled);
+            }
 
             namedPipeFactory.Close();
+        }
+
+        private void ServiceButtonClickHandler(object sender, EventArgs e)
+        {
+            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.Transport);
+            ChannelFactory<IContractInterface> namedPipeFactory = new ChannelFactory<IContractInterface>(binding, Settings.NamedPipeServiceBaseAddress);
+            IContractInterface channel = namedPipeFactory.CreateChannel();
+
+            channel.SetServiceState(!VPNClientStatus.ServiceEnabled);
+
+            namedPipeFactory.Close();
+        }
+
+        private void RegistryButtonClickHandler(object sender, EventArgs e)
+        {
+            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.Transport);
+            ChannelFactory<IContractInterface> namedPipeFactory = new ChannelFactory<IContractInterface>(binding, Settings.NamedPipeServiceBaseAddress);
+            IContractInterface channel = namedPipeFactory.CreateChannel();
+
+            channel.SetRegistryState(!VPNClientStatus.EnabledInRegistry);
+
+            namedPipeFactory.Close();
+
+        }
+
+        private void ApplicationButtonClickHandler(object sender, EventArgs e)
+        {
+            NetNamedPipeBinding binding = new NetNamedPipeBinding(NetNamedPipeSecurityMode.Transport);
+            ChannelFactory<IContractInterface> namedPipeFactory = new ChannelFactory<IContractInterface>(binding, Settings.NamedPipeServiceBaseAddress);
+            IContractInterface channel = namedPipeFactory.CreateChannel();
+
+            channel.SetApplicationState(!VPNClientStatus.StartupAppEnabled);
+
+            namedPipeFactory.Close();
+
         }
     }
 }

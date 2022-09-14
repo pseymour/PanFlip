@@ -54,6 +54,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="State.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="VPNClientStatus.cs" />
   </ItemGroup>

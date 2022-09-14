@@ -6,42 +6,37 @@
     <ProductVersion>3.9</ProductVersion>
     <ProjectGuid>8dac9832-d464-4916-b102-9efa913bdc44</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>PanFlip 0.1 %24%28Platform%29</OutputName>
+    <OutputName>PanFlip 1.0</OutputName>
     <OutputType>Package</OutputType>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' AND '$(MSBuildExtensionsPath32)' != '' ">$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <IncludeSearchPaths>
     </IncludeSearchPaths>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <OutputPath>bin\$(Configuration) $(Platform)\</OutputPath>
-    <IntermediateOutputPath>obj\$(Configuration) $(Platform)\</IntermediateOutputPath>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DefineConstants>Debug</DefineConstants>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <SuppressIces>ICE57</SuppressIces>
     <Cultures>
     </Cultures>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
-    <OutputPath>bin\$(Configuration) $(Platform)\</OutputPath>
-    <IntermediateOutputPath>obj\$(Configuration) $(Platform)\</IntermediateOutputPath>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
     <SuppressIces>ICE57</SuppressIces>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
-    <OutputPath>bin\$(Configuration) $(Platform)\</OutputPath>
-    <IntermediateOutputPath>obj\$(Configuration) $(Platform)\</IntermediateOutputPath>
-    <SuppressIces>ICE57</SuppressIces>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
-    <DefineConstants>Debug</DefineConstants>
-    <OutputPath>bin\$(Configuration) $(Platform)\</OutputPath>
-    <IntermediateOutputPath>obj\$(Configuration) $(Platform)\</IntermediateOutputPath>
-    <SuppressValidation>False</SuppressValidation>
-    <SuppressIces>ICE57</SuppressIces>
-    <Cultures>
-    </Cultures>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Product.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="en-US.wxl" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProcessCommunication\ProcessCommunication.csproj">
@@ -76,15 +71,6 @@
       <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
       <RefTargetDir>INSTALLFOLDER</RefTargetDir>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WixExtension Include="WixUtilExtension">
-      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
-      <Name>WixUtilExtension</Name>
-    </WixExtension>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="en-US.wxl" />
   </ItemGroup>
   <Import Project="$(WixTargetsPath)" />
   <!--
