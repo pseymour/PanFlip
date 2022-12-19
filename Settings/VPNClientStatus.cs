@@ -179,8 +179,15 @@ namespace PanFlip
                 if (null != panGPSKey)
                 {
                     byte[] registryValue = (byte[])panGPSKey.GetValue("GlobalProtect");
-                    returnValue = (registryValue[0] == 2);
                     panGPSKey.Close();
+                    if (null == registryValue)
+                    {
+                        returnValue = true;
+                    }
+                    else
+                    {
+                        returnValue = (registryValue[0] == 2);
+                    }
                 }
 
                 baseKey.Close();
@@ -198,6 +205,14 @@ namespace PanFlip
                 if (null != panGPSKey)
                 {
                     byte[] registryValue = (byte[])panGPSKey.GetValue("GlobalProtect");
+                    if (null == registryValue)
+                    {
+                        registryValue = new byte[12];
+                        for (int i = 0; i < registryValue.Length; i++)
+                        {
+                            registryValue[i] = 0;
+                        }
+                    }
                     if (value)
                     {
                         registryValue[0] = 2;

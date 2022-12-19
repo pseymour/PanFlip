@@ -73,7 +73,6 @@ namespace PanFlip
             button.Text = text;
         }
 
-
         /*
         /// <summary>
         /// Returns true if the current process is running with administrator privileges.
@@ -87,7 +86,6 @@ namespace PanFlip
             }
         }
         */
-
 
         private void ConfigureButton()
         {
@@ -191,7 +189,6 @@ namespace PanFlip
             Text = formText.ToString();
         }
 
-
         /// <summary>
         /// Handles the Load event for the form.
         /// </summary>
@@ -207,7 +204,6 @@ namespace PanFlip
 
             this.notifyIconTimer.Start();
         }
-
 
         private void ToggleButtonClickHandler(object sender, EventArgs e)
         {
@@ -247,7 +243,6 @@ namespace PanFlip
             channel.SetRegistryState(!VPNClientStatus.EnabledInRegistry);
 
             namedPipeFactory.Close();
-
         }
 
         private void ApplicationButtonClickHandler(object sender, EventArgs e)
@@ -259,7 +254,6 @@ namespace PanFlip
             channel.SetApplicationState(!VPNClientStatus.StartupAppEnabled);
 
             namedPipeFactory.Close();
-
         }
     }
 }
