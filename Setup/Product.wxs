@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi" xmlns:util="http://schemas.microsoft.com/wix/UtilExtension">
-  <Product Id="*" Name="!(loc.SoftwareTitle)" Language="!(loc.LANG)" Version="1.0.1" Manufacturer="!(loc.SoftwareManufacturer)" UpgradeCode="A92B3935-8FE9-4F0F-8B1F-1D60D3C9A719">
+  <Product Id="*" Name="!(loc.SoftwareTitle)" Language="!(loc.LANG)" Version="1.0.2" Manufacturer="!(loc.SoftwareManufacturer)" UpgradeCode="A92B3935-8FE9-4F0F-8B1F-1D60D3C9A719">
     <Package InstallerVersion="400" Compressed="yes" InstallScope="perMachine" />
     <Condition Message="!(loc.AdminRightsRequired)">Privileged</Condition>
     <MajorUpgrade DowngradeErrorMessage="!(loc.NewerVersionInstalled)" />
